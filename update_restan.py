@@ -29,4 +29,4 @@ print("Service aktif, menunggu jadwal....")
 
 while True:
      schedule.run_pending()
-     time.sleep(60)
+     time.sleep(3600)
