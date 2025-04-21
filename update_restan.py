@@ -23,7 +23,7 @@ def call_procedure():
             cursor.close()
             connection.close()
 
-schedule.every().day.at("01:00").do(call_procedure)
+schedule.every().day.at("02:00").do(call_procedure)
 
 print("service aktif, menunggu jadwal...")
 
