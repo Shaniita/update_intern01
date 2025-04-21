@@ -5,6 +5,8 @@ from datetime import datetime
 import os
 
 def call_procedure():
+    connection = None 
+    cursor = None     
     try:
         connection = mysql.connector.connect(
             host=os.environ['DB_HOST'],
@@ -19,13 +21,14 @@ def call_procedure():
     except Exception as e:
         print(f"[{datetime.now()}] ERROR: {e}")
     finally:
-        if connection.is_connected():
+        if cursor:
             cursor.close()
+        if connection and connection.is_connected():
             connection.close()
 
-schedule.every(10).minutes.do(call_procedure)
+schedule.every(20).minutes.do(call_procedure)
 
-print("service aktif, menunggu jadwal...")
+print("Service aktif, menunggu jadwal...")
 
 while True:
     schedule.run_pending()
