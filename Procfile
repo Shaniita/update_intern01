@@ -1,1 +1,1 @@
-worker:python_update_restan.py
+worker:update_restan.py
