@@ -4,10 +4,10 @@ const path = require('path');
 const schedule = require('node-schedule');
 
 const DB_CONFIG = {
-  host: '192.168.1.40',
-  user: 'sanita',
-  password: 'vZCCm1e2LLb8CCnW',
-  database: 'cmp_dev'
+  host: 'xxxxxxxxx',
+  user: 'xxxxxxxxx',
+  password: 'xxxxxxxxx',
+  database: 'xxxxxxxxx'
 };
 
 const logFilePath = path.join(__dirname, 'restan_log.txt');
