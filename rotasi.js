@@ -3,10 +3,10 @@ const fs = require('fs');
 const path = require('path');
 
 const DB_CONFIG = {
-  host: '192.168.1.40',
-  user: 'sanita',
-  password: 'vZCCm1e2LLb8CCnW',
-  database: 'cmp_dev'
+  host: 'xxxxxxxxx',
+  user: 'xxxxxxxxx',
+  password: 'xxxxxxxxx',
+  database: 'xxxxxxxxx'
 };
 
 const p_dept_abbr = 'null';
